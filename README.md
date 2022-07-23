@@ -1,39 +1,41 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+A scalable renderer for die faces in Middara.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+<img src="https://github.com/swittman/middara_dice/blob/main/docs/example.png" width="30%" height="30%"/>
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add the following to pubspec.yaml
+```
+dependencies:
+  flutter:
+    sdk: flutter
+
+  middara_dice:
+    git:
+      url: git://github.com/swittman/middara_dice.git
+      ref: main
+```
+
+Import the file with 
+```
+import "package:middara_dice/middara_dice.dart";
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+* DieFace defaults to blank black die. All fields are optional.
+* Change the die color with `color` and the icon/symbol color with `inkColor`. 
+* Set the face's number with `number`. If a number is not set, the corner icons will be rendered larger.
+* Set icons positionally with `iconTR` (top right), `iconBL` (bottom left), etc. using the enum `DieIcon`. 
+* If *any* icon is set to `DieIcon.skull`, number and corner symbols will be ignored, instead showing a large skull icon in the center of the face.
 
 ```dart
-const like = 'sample';
+const DieFace(
+    color: Colors.red,
+    number: 8,
+    iconTR: DieIcon.shield,
+    iconBL: DieIcon.book,
+    iconBR: DieIcon.book,
+),
 ```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+See the examples for more detail.

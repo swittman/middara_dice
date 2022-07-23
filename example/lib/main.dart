@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import "package:middara_dice/die_face.dart";
+import "package:middara_dice/middara_dice.dart";
 
 void main() {
   runApp(const MyApp());
@@ -26,14 +26,39 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const Scaffold(
-        body: DieFace(
-          color: Colors.blue,
-          number: 10,
-          iconTL: DieIcon.star,
-          iconTR: DieIcon.shield,
-          iconBL: DieIcon.book,
-          iconBR: DieIcon.shield,
+      home: Scaffold(
+        body: Column(
+          children: <Widget>[
+            Container(
+              margin: const EdgeInsets.all(10),
+              child: const DieFace(
+                color: Colors.blue,
+                inkColor: Colors.black87,
+                number: 10,
+                iconTL: DieIcon.star,
+                iconTR: DieIcon.shield,
+                iconBL: DieIcon.book,
+                iconBR: DieIcon.shield,
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.all(10),
+              width: 150,
+              child: const DieFace(
+                iconTL: DieIcon.book,
+                iconTR: DieIcon.shield,
+                iconBL: DieIcon.book,
+                iconBR: DieIcon.shield,
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.all(10),
+              width: 50,
+              child: const DieFace(
+                iconTL: DieIcon.skull,
+              ),
+            ),
+          ],
         ),
       ),
     );
