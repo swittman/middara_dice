@@ -21,11 +21,11 @@ class DieFace extends StatelessWidget {
   final int? number;
 
   // These are divisors, so a larger number is a smaller icon.
-  static int largeIconScale = 3;
-  static int smallIconScale = 5;
-  static int iconPaddingScale = 10;
+  static double largeIconScale = 2.5;
+  static double smallIconScale = 3.5;
+  static int iconPaddingScale = 12;
   static int textScale = 3;
-  static int skullScale = 2;
+  static double skullScale = 1.2;
   static int radiusScale = 20;
 
   IconData? _iconFromEnum(DieIcon iconEnum) {
