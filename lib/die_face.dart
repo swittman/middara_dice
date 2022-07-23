@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'middara_dice_icons.dart';
 
-enum DieIcon { blank, shield, book, star, skull }
+enum DieIcon { blank, shield, book, burst, skull }
 
 class DieFace extends StatelessWidget {
   const DieFace({
@@ -34,7 +34,7 @@ class DieFace extends StatelessWidget {
         return MiddaraDiceIcons.shield;
       case DieIcon.book:
         return MiddaraDiceIcons.book;
-      case DieIcon.star:
+      case DieIcon.burst:
         return MiddaraDiceIcons.burst;
       case DieIcon.skull:
         return MiddaraDiceIcons.skull;

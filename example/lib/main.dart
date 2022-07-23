@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
                 color: Colors.blue,
                 inkColor: Colors.black87,
                 number: 10,
-                iconTL: DieIcon.star,
+                iconTL: DieIcon.burst,
                 iconTR: DieIcon.shield,
                 iconBL: DieIcon.book,
                 iconBR: DieIcon.shield,
