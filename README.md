@@ -1,4 +1,4 @@
-A scalable renderer for die faces in Middara.
+A scalable renderer for die faces from the boardgame Middara: Unintentional Malum.
 
 <img src="https://github.com/swittman/middara_dice/blob/main/docs/example.png" width="30%" height="30%"/>
 
