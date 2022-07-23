@@ -4,7 +4,7 @@ A scalable renderer for die faces from the boardgame Middara: Unintentional Malu
 
 ## Getting started
 
-Add the following to pubspec.yaml
+Add the following dependency and font to your pubspec.yaml
 ```
 dependencies:
   flutter:
@@ -14,6 +14,13 @@ dependencies:
     git:
       url: git://github.com/swittman/middara_dice.git
       ref: main
+// ...
+
+flutter:
+  fonts:
+    - family: Cinzel
+      fonts:
+        - asset: packages/middara_dice/fonts/Cinzel-Bold.ttf
 ```
 
 Import the file with 

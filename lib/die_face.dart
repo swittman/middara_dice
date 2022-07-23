@@ -94,6 +94,7 @@ class DieFace extends StatelessWidget {
                             number.toString(),
                             style: TextStyle(
                                 color: inkColor,
+                                fontFamily: "Cinzel",
                                 fontSize: constraint.maxHeight / textScale),
                           ),
                         ),
