@@ -21,6 +21,9 @@ flutter:
     - family: Cinzel
       fonts:
         - asset: packages/middara_dice/fonts/Cinzel-Bold.ttf
+    - family: MiddaraDice
+      fonts:
+        - asset: packages/middara_dice/fonts/MiddaraDice.ttf
 ```
 
 Import the file with 
